@@ -1,0 +1,30 @@
+import java.util.Scanner;
+
+public class Main {
+
+    public static int prime (int x){
+        int prime = 0;
+        for (int i=2;i<x;i++){
+            if (x % i == 0){
+                prime++;
+            }
+        }
+        return prime;
+    }
+
+
+        public static void main (String[]args){
+
+            Scanner scan = new Scanner(System.in);
+
+            System.out.print("Sayı giriniz : ");
+            int number=scan.nextInt();
+            if (prime(number)==0){
+                System.out.print(number + " sayısı ASALDIR !");
+            }
+            else {
+                System.out.print(number + " sayısı ASAL değildir !");
+            }
+        }
+
+    }
